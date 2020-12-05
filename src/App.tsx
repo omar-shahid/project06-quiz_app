@@ -19,7 +19,7 @@ function App() {
 
 	const startTheQuiz = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
 		fetch(
-			"https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple"
+			"https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=boolean"
 		)
 			.then(res => res.json())
 			.then((data: { results: QuizQuestion[] }) => {
